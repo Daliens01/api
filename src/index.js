@@ -1,8 +1,10 @@
 const express = require("express")
 const  mongoose  = require("./utils/DBConection")
 const app = express()
-const port = process.env.PORT || 4000
+// const port = process.env.PORT || 4000
 const userRoutes = require("./routes/options")
+const cors = require("cors")
+app.use(cors())
 //middleware
 app.use(express.json())
 app.use("/api", userRoutes)
@@ -14,4 +16,4 @@ app.get("/", (req, res) =>{
 
 mongoose.DBConection()
 
-app.listen(port, ()=> console.log("PORT YOU'RE USING IS:", port))
+// app.listen(port, ()=> console.log("PORT YOU'RE USING IS:", port))
