@@ -6,7 +6,7 @@ const userRoutes = require("./routes/options")
 //middleware
 app.use(express.json())
 app.use("/api", userRoutes)
- 
+  
 //rutas
 app.get("/", (req, res) =>{
     res.send("Wellcome to Api-Esi-List")

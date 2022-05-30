@@ -3,7 +3,7 @@ const router = express.Router()
 const schema = require("../models/Task")
 const cors = require("cors")
 const task = schema.find()
-
+ 
 //url: http://localhost:4000/api/options
 //llamado cors
 cors()
