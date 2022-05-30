@@ -7,7 +7,7 @@ const task = schema.find()
 //url: http://localhost:4000/api/options
 //llamado cors
 cors()
-
+ 
 //agregar
 router.post(("/options"), (req, res)=>{
       const saved = schema(req.body)
