@@ -1,8 +1,8 @@
 const express = require("express")
-const  mongoose  = require("./utils/DBConection")
+const  mongoose  = require("utils/DBConection")
 const app = express()
 const port = process.env.PORT || 4000
-const userRoutes = require("./routes/options")
+const userRoutes = require("routes/options")
 const cors = require("cors")
 app.use(cors())
 //middleware
